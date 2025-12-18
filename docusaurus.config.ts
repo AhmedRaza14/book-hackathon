@@ -14,8 +14,8 @@ const config: Config = {
     v4: true, 
   },
 
-  url: 'https://panaversity.github.io',
-  baseUrl: '/physical-ai-textbook',
+  url: 'https://ahmedraza14.github.io',
+  baseUrl: '/book-hackathon',
 
   organizationName: 'Panaversity', 
   projectName: 'physical-ai-textbook', 
@@ -41,14 +41,14 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/Panaversity/physical-ai-textbook/edit/main/',
+            'https://ahmedraza14.github.io/book-hackathon/edit/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/Panaversity/physical-ai-textbook/edit/main/',
+            'https://ahmedraza14.github.io/book-hackathon/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -89,7 +89,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/Panaversity/physical-ai-textbook',
+          href: 'https://ahmedraza14.github.io/book-hackathon',
           label: 'GitHub',
           position: 'right',
         },
@@ -125,7 +125,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/Panaversity/physical-ai-textbook',
+              href: 'https://ahmedraza14.github.io/book-hackathon',
             },
           ],
         },
