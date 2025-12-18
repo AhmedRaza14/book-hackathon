@@ -1,0 +1,48 @@
+.hardwareAlert {
+  border-left: 0.25rem solid #3578e5;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.hardwareAlertHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.hardwareAlertIcon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.hardwareAlertTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hardwareAlertContent {
+  margin-top: 0.5rem;
+}
+
+.hardwareAlertItem {
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+
+/* Danger variant */
+.alert--danger .hardwareAlert {
+  border-left-color: #ff6b6b;
+}
+
+/* Warning variant */
+.alert--warning .hardwareAlert {
+  border-left-color: #ffd166;
+}
+
+/* Info variant */
+.alert--info .hardwareAlert {
+  border-left-color: #3578e5;
+}

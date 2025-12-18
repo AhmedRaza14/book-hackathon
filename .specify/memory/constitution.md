@@ -1,55 +1,81 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Physical AI & Humanoid Robotics Textbook Constitution
+
+## Mission Statement
+To create a comprehensive, technical textbook for Panaversity titled "Physical AI & Humanoid Robotics" that bridges the gap between digital AI models and embodied intelligence, emphasizing the integration of AI with physical robotics systems.
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Physical AI Philosophy
+Emphasize the transition from digital-only models (LLMs) to Embodied Intelligence. Bridge the gap between "Digital Brain" (AI) and "Physical Body" (Robotics). Prioritize physics-informed AI and natural human interaction. Promote humanoids as the ultimate form factor for a human-centered world.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Technical Excellence
+Maintain high technical standards across all content. Ensure all code examples are functional and tested. Provide practical implementation guidance alongside theoretical concepts. Include real-world applications and case studies.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Accessibility & Education
+Write in an authentic, peer-like mentoring tone. Maintain intellectual honesty about computational requirements and challenges. Support multi-lingual content (particularly Urdu translation). Make complex topics approachable without oversimplification.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. System Integration
+Emphasize the connection between different robotics subsystems. Demonstrate practical integration of AI, sensing, actuation, and control. Address "Sim-to-Real" transfer challenges. Focus on modular, reusable components.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Safety and Ethics
+Prioritize safety in all robotic implementations. Address ethical considerations in humanoid robotics. Ensure responsible AI deployment. Include privacy and data protection guidelines.
 
-### [PRINCIPLE_6_NAME]
+### VI. Hands-On Learning
+Provide practical exercises and projects. Include simulation environments alongside real hardware examples. Offer assessment materials and solutions. Connect theory to implementation consistently.
 
+## Technical Domains
 
-[PRINCIPLE__DESCRIPTION]
+### 1. Robotic Nervous System (ROS 2)
+- Nodes, topics, services, and actions
+- `rclpy` implementation
+- Best practices for distributed robotics systems
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### 2. Digital Twins
+- Gazebo and Unity for hardware simulation
+- "Digital Twin Workstation" vs. "Edge Kit" (Jetson Orin Nano) distinction
+- Physics simulation and sensor modeling
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### 3. AI-Robot Brain (NVIDIA Isaac)
+- Isaac Sim, Isaac ROS, Omniverse
+- VSLAM (Visual Simultaneous Localization and Mapping)
+- GPU-accelerated AI processing
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### 4. Vision-Language-Action (VLA)
+- Integration of LLMs/VLMs with robotic control
+- Voice-to-Action systems (using Whisper)
+- Cognitive planning and decision making
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Implementation Stack
+- **Framework:** Docusaurus (deployed via GitHub Pages/Vercel)
+- **Tooling:** Spec-Kit Plus and Claude Code for content generation
+- **RAG Chatbot:** OpenAI Agents, FastAPI, Neon (Postgres), Qdrant (Vector DB)
+- **Authentication:** Better-Auth for personalization
+- **Multi-lingual:** Support for Urdu and other languages
+
+## Computational Requirements
+- Acknowledge high computational demands (RTX 4070+ GPUs recommended)
+- Address "Sim-to-Real" transfer challenges
+- Provide hardware specifications and recommendations
+
+## Quality Standards
+- Use LaTeX for complex physics/kinematics equations
+- Include URDF/SDF modeling examples
+- Provide sensor simulation examples (LiDAR, Depth, IMU)
+- Ensure all mathematical notation is precise (e.g., $J(q)$ for Jacobians, $T$ for Transformation Matrices)
+
+## Content Organization
+- Modular chapters that can stand alone but build upon each other
+- Practical exercises and projects
+- Code repositories and simulation environments
+- Assessment materials and solutions
+
+## Ethical Considerations
+- Responsible AI deployment
+- Safety considerations in humanoid robotics
+- Human-robot interaction ethics
+- Privacy and data protection in embodied systems
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs all aspects of the Physical AI & Humanoid Robotics textbook development. All content, code examples, and pedagogical approaches must align with these principles. Any significant deviations require constitutional amendments with proper justification and approval.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-18 | **Last Amended**: 2025-12-18
