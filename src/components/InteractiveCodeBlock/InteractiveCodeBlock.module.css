@@ -1,0 +1,82 @@
+.interactiveCodeBlock {
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.codeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.codeTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.frameworkTag, .environmentTag {
+  background-color: #e9ecef;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.hint {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-top: none;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #856404;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+.submitButton, .resetButton, .solutionButton {
+  margin-right: 0.5rem;
+}
+
+.output {
+  border-top: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.outputContent {
+  background-color: #000;
+  color: #0f0;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+  overflow-x: auto;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .codeHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls button {
+    width: 100%;
+  }
+}

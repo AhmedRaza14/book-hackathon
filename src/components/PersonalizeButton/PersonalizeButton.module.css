@@ -1,0 +1,117 @@
+.personalizeContainer {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.personalizeButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.buttonIcon {
+  font-size: 1.2rem;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  min-width: 300px;
+  margin-top: 0.5rem;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.menuHeader h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.closeButton:hover {
+  background-color: #e9ecef;
+}
+
+.menuContent {
+  padding: 1rem;
+}
+
+.optionGroup {
+  margin-bottom: 1.5rem;
+}
+
+.optionGroup:last-child {
+  margin-bottom: 0;
+}
+
+.optionGroup h5 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.levelOptions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.levelOptions .button {
+  margin: 0;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.checkbox {
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dropdownMenu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+  }
+}
