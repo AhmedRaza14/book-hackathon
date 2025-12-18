@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   url: 'https://ahmedraza14.github.io',
-  baseUrl: '/book-hackathon',
+  baseUrl: '/book-hackathon/',
 
   organizationName: 'Panaversity', 
   projectName: 'physical-ai-textbook', 
